@@ -6,7 +6,8 @@ const Child = () => {
     return(
         <div>
         <h1>this is first child </h1>
-        <h2>counter value is {counterValue}</h2>
+        <h2>counter value is {counterValue[0]}</h2>
+        <button onClick={() => {counterValue[1](++counterValue[0])}}>Increament</button>
         </div>
     )
 }
